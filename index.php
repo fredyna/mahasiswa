@@ -36,7 +36,7 @@
                     $data = $koneksi->query($query);
                     if($data->num_rows <= 0){
                         echo "<tr>";
-                        echo "<td colspan='6' class='center'><i>Tidak ada data</i></td>";
+                        echo "<td colspan='7' class='text-center'><i>Tidak ada data</i></td>";
                         echo "</tr>";
                     } else{
                         while($row = $data->fetch_assoc()){
@@ -58,6 +58,7 @@
             </table>
         </div>
     </div>
+
     <footer>
         <p class="text-center">Copyright &copy; 2018 by Fredy Nur Apriyanto</p>
     </footer>
