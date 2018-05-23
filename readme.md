@@ -1,9 +1,9 @@
 ##Dokumentasi Tugas UAS Pemrograman Web##
 
-PHP 7.1
-HTML 5
-CSS 3
-Bootstrap 3.3.7
+PHP 7.1 <br>
+HTML 5 <br>
+CSS 3 <br>
+Bootstrap 3.3.7 <br>
 
 #penginstalan aplikasi
 
