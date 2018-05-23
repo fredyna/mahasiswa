@@ -73,7 +73,7 @@
                         <?php 
                             for($i=1;$i<=8;$i++){ ?>
                                 <option value="<?php echo $i;?>" <?php echo $smt==$i ? 'selected':'';?>><?php echo $i;?></option>
-                        <?  } ?>
+                        <?php  } ?>
                     </select>
                 </div>
             </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 28, 2018 at 01:36 AM
+-- Generation Time: May 23, 2018 at 01:29 PM
 -- Server version: 10.1.26-MariaDB
 -- PHP Version: 7.1.9
 
@@ -19,47 +19,39 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `mahasiswa`
+-- Database: `mahasiswa_web`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `profile`
+-- Table structure for table `mahasiswa`
 --
 
-CREATE TABLE `profile` (
-  `Id` int(11) NOT NULL,
-  `Nama` varchar(255) NOT NULL,
-  `Alamat` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+CREATE TABLE `mahasiswa` (
+  `nim` varchar(8) NOT NULL,
+  `nama` varchar(100) NOT NULL,
+  `jenis_kelamin` varchar(9) NOT NULL,
+  `semester` int(1) NOT NULL,
+  `prodi` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `profile`
+-- Dumping data for table `mahasiswa`
 --
 
-INSERT INTO `profile` (`Id`, `Nama`, `Alamat`) VALUES
-(1, 'Fredy', 'Jatilawang');
+INSERT INTO `mahasiswa` (`nim`, `nama`, `jenis_kelamin`, `semester`, `prodi`) VALUES
+('16090075', 'Fredy Nur Apriyanto', 'Laki-Laki', 4, 'D4 Teknik Informatika');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `profile`
+-- Indexes for table `mahasiswa`
 --
-ALTER TABLE `profile`
-  ADD PRIMARY KEY (`Id`) USING BTREE;
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `profile`
---
-ALTER TABLE `profile`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `mahasiswa`
+  ADD PRIMARY KEY (`nim`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
