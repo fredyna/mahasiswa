@@ -23,6 +23,8 @@
                 <tbody>
                 <?php
                     require_once('koneksi.php');
+                    $no = 1;
+
                     $koneksiObj = new Koneksi();
                     $koneksi = $koneksiObj->getKoneksi();
 
@@ -39,7 +41,6 @@
                         echo "</tr>";
                     } else{
                         while($row = $data->fetch_assoc()){
-                            $no = 1;
                             echo "<tr>";
                             echo "<td>".$no++."</td>";
                             echo "<td class='center'>".$row['nim']."</td>";
