@@ -23,7 +23,6 @@
                 <tbody>
                 <?php
                     require_once('koneksi.php');
-                    $no = 1;
                     $koneksiObj = new Koneksi();
                     $koneksi = $koneksiObj->getKoneksi();
 
